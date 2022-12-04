@@ -9,9 +9,11 @@
                 "-std=c++17",
                 "-Wall",
                 "--pedantic-errors",
+                "-I/usr/local/include/opencv4/ -L/usr/local/lib",
                 "${file}",
                 "-o",
-                "/workspace/bin/${fileBasenameNoExtension}"
+                "/workspace/bin/${fileBasenameNoExtension}",
+                "`pkg-config --cflags --libs opencv4`",
             ],
             "options": {
                 "cwd": "${fileDirname}"

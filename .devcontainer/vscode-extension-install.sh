@@ -1,5 +1,5 @@
 #!/bin/bash
- 
+
 # Visual Studio Code :: Package list
 pkglist=(
         ms-vscode.cpptools-extension-pack
@@ -11,7 +11,7 @@ pkglist=(
 		njpwerner.autodocstring
 		gruntfuggly.todo-tree
 )
- 
+
 for var in ${pkglist[@]}
 do
     code --install-extension $var
