@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  cpp-env:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: cpp-env
+    image: cpp-env-image
+    shm_size: '24gb'
+    tty: true
+    volumes: 
+      - $PWD:/workspace
+    command: '/bin/bash'
+    ports:
+      - 18001-18010:18001-18010
