@@ -1,11 +1,10 @@
 {
-    // 公式リファリンス
-    // https://code.visualstudio.com/docs/cpp/c-cpp-properties-schema-reference
     "configurations": [
         {
             "name": "Linux g++",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/usr/local/include/opencv4"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
@@ -13,19 +12,6 @@
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64"
         }
-        /**
-        {
-           "name": "Linux Clang++",
-           "includePath": [
-               "${workspaceFolder}/**"
-           ],
-           "defines": [],
-           "compilerPath": "/usr/bin/clang++",
-           "cStandard": "c17",
-           "cppStandard": "c++17",
-           "intelliSenseMode": "clang-x64"
-        }
-        **/
     ],
     "version": 4
 }
