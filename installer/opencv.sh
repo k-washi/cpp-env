@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git submodule update ./3rdparty/opencv
+git submodule update --init ./3rdparty/opencv
 # opencv contribはBSDのためインストールしない
 #git submodule update ./3rdparty/opencv_contrib/
 
