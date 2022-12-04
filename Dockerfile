@@ -9,6 +9,6 @@ ENV TZ=Asia/Tokyo
 RUN apt-get install -y wget curl git zip \
   build-essential gdb \
   g++ \
-  cmake \
+  cmake
 
 WORKDIR /workspace
