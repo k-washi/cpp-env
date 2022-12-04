@@ -9,6 +9,5 @@ ENV TZ=Asia/Tokyo
 RUN apt-get install -y wget curl git zip \
   g++ \
   cmake \
-  clang-format
 
 WORKDIR /workspace
