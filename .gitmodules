@@ -1,0 +1,3 @@
+[submodule "3rdparty/DBow3"]
+	path = 3rdparty/DBow3
+	url = https://github.com/rmsalinas/DBow3.git
