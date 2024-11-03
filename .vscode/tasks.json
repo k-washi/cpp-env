@@ -6,14 +6,12 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-O2",
-                "-std=c++17",
+                "-std=c++23",
                 "-Wall",
                 "--pedantic-errors",
-                "-I/usr/local/include/opencv4/ -L/usr/local/lib",
                 "${file}",
                 "-o",
                 "/workspace/bin/${fileBasenameNoExtension}",
-                "`pkg-config --cflags --libs opencv4`",
             ],
             "options": {
                 "cwd": "${fileDirname}"

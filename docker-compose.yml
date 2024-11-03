@@ -1,10 +1,14 @@
-version: '3'
+version: '3.8'
 
 services:
   cpp-env:
-    build: 
+    build:
       context: .
-      dockerfile: Dockerfile
+      args:
+      - uid=1001
+      - gid=1001
+      - username=abc
+      - project_name=cppenv
     container_name: cpp-env
     image: cpp-env-image
     shm_size: '24gb'
@@ -13,4 +17,4 @@ services:
       - $PWD:/workspace
     command: '/bin/bash'
     ports:
-      - 18001-18010:18001-18010
+      - 12301-12310:12301-12310

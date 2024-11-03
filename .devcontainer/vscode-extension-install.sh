@@ -10,6 +10,8 @@ pkglist=(
 		shardulm94.trailing-spaces
 		njpwerner.autodocstring
 		gruntfuggly.todo-tree
+		tchojnacki.cpp-compile
+		GitHub.copilot-chat
 )
 
 for var in ${pkglist[@]}

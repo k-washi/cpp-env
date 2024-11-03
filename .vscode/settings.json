@@ -1,10 +1,7 @@
 {
     "clang.executable": "g++",
     "code-runner.runInTerminal": true,
-    "clang.cxxflags": [ "-std=c++17"],
-    "code-runner.executorMap": {
-      "cpp": "cd $dir && time g++ -O2 -std=c++17 -Wall --pedantic-errors $fileName -o /workspace/bin/a.out && /workspace/bin/a.out",
-    },
+    "clang.cxxflags": [ "-std=c++23"],
     "[cpp]": {
       "editor.defaultFormatter": "ms-vscode.cpptools"
     }
